@@ -6,4 +6,8 @@
 )
 
 create index IdxLogNameLogDate on dbo.log (LogName, LogDate)
-select * from log
+
+--select * 
+--from log
+--where LogName = 'GetAverageEmployeeVacationHours'
+--order by logdate desc

@@ -1,5 +1,4 @@
-﻿-- Asignment 1
--- structured error handling
+﻿-- structured error handling
 declare @a float, @b float, @c float;
 
 set @a = 10;
@@ -15,6 +14,7 @@ begin catch
     print @c;
 end catch
 
+
 -- unstructure error handling
 declare @a float = 10, @b float = 0, @c float;
 
@@ -26,3 +26,4 @@ if (@@error <> 0) begin
 end
 
 print @c
+GO

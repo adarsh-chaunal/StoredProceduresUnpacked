@@ -56,14 +56,16 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="LoggingError" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="WhileLoopExample.sql" />
     <Build Include="DivideByZeroTryCatch.sql" />
-    <Build Include="CreateLogTable.sql" />
     <Build Include="DivideErrorCheck.sql" />
     <Build Include="SqlQuery_1.sql" />
     <Build Include="StructuredAndUnstructuredErrorHandling.sql" />
     <Build Include="WhileLoopWeeklyCalanderExample.sql" />
+    <Build Include="LoggingError\CreateLogTable.sql" />
+    <Build Include="LoggingError\LoggingErrors.sql" />
   </ItemGroup>
 </Project>
